@@ -33,8 +33,7 @@ This also runs a quick test for you by
 
 1. installing curl on the machine 
 2. curling a well known website 
-3. copying the captured traffic (tcpdump) logs from the Nat computer to 
-the local directory.
+3. copying the captured traffic (tcpdump) logs from the Nat computer to the local directory.
 
 #### Deleting the Cluster
 ###### Deleting the network, subnets, nat, routes, firewall rules and gke cluster 

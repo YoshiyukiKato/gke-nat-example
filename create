@@ -18,7 +18,9 @@ kubectl exec -it $POD curl https://www.facebook.com > facebook-curl.html
 echo "Copying packet captures from nat locally." 
 ## YOU CAN UNCOMMENT THIS IF YOU WANT BUT THE PCAP FILE IS QUITE LARGE ## 
 #gcloud compute copy-files nat-vm:/tmp/nat.pcap nat.pcap
-##
-gcloud compute copy-files nat-vm:/tmp/nat.txt nat.txt 
 
+## check global ip
+kubectl exec -it $POD curl inet-ip.info
 
+## this command not works by permission error
+# gcloud compute scp nat-vm:/tmp/nat.txt nat.txt 
